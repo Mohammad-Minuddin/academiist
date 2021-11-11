@@ -1,0 +1,649 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 1100px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.container::after,
+.container::before{
+    content: "";
+    display: table;
+    clear: both;
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight: 700;
+}
+.col-50{
+    width: 50%;
+    float: left;
+}
+/* --01. Top-Header-Css -- */
+.top-header{
+    background: #1D1D1D;
+    padding: 10px 0;
+}
+.number{
+    color: #b6b6b6;
+    font-size: 14px;
+    font-weight: 300;
+    transition: 1s;
+    text-decoration: none;
+}
+.number:hover{
+    color: red;
+}
+.social{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 300;
+    color: #b6b6b6;
+    margin-left: 25px;
+}
+.social li{
+    display: inline-block;
+    font-size: 14px;
+    list-style: none;
+    margin: 0 3px;
+    
+}
+.social li a{
+    color: #b6b6b6;
+    transition: 1s;
+}
+.social li a:hover{
+    color: red;
+}
+.login-register{
+    text-transform: capitalize;
+    font-size: 14px;
+    float: right;
+}
+.login-register a{
+    color: #b6b6b6;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: 1s;
+}
+.login-register a:hover{
+    color: red;
+}
+.login-register i{
+    margin-right: 3px;
+}
+/* --01. Top-Header-Css-END -- */
+
+
+/* --02. Header-Css -- */
+header{
+    padding: 25px 0 14px 0;
+}
+header img{
+    width: 170px;
+}
+header .menu{
+    float: right;
+}
+header .menu li{
+    list-style: none;
+    display: inline-block;
+}
+header .menu li a{
+    text-decoration: none;
+    font-size: 17px;
+    color: #252525;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 30px;
+    font-weight: 600;
+    transition: 1s;
+    border-bottom: 1px solid transparent;
+}
+header .menu li a:hover{
+    border-bottom: 1px solid red;
+    
+}
+.col-30{
+    width: 30%;
+    float: left;
+}
+.col-60{
+    width: 60%;
+    float: left;
+}
+.col-10{
+    width: 10%;
+    float: left;
+}
+.col-10 .icon{
+    float: right;
+}
+.col-10 span{
+    margin-left: 11px;
+}
+.col-10 i:hover{
+    color: red;
+    transition: 0.5s;
+}
+.menu li a:hover i{
+    transform: rotate(178deg);
+}
+/* --02. Header-Css-END -- */
+
+
+/* --03. Home-Css -- */
+.home{
+    background: url(../img/bg.jpg);
+    background-size: cover;
+    color: white;
+    padding: 150px 0px;
+}
+.home h1{
+    font-size: 90px;
+    font-weight: 600;
+    line-height: 99px;
+}
+.home span{
+    border: 1.5px solid white;
+    background: white;
+    width: 50px;
+    display: block;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+.home p{
+    width: 348px;
+    font-size: 19px;
+    line-height: 30px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+.home a{
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 16px 35px;
+    font-size: 17px;
+    display: inline-block;
+    line-height: 34px;
+    font-weight: 600;
+}
+.home .btn{
+    margin-left: 19px;
+    border: none;
+    background: #FF1949;
+}
+.home a{
+    transition: 2s;
+}
+.home a i{
+    visibility: hidden;
+}
+.home a:hover i{
+    visibility: visible;
+}
+
+
+/* --Course-Start-- */
+.course{
+    padding: 100px 0;
+}
+.course .menu ul li{
+    display: inline-block;
+    margin-right: 25px;
+    padding-bottom: 35px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.course .cimg{
+    width: 30.50%;
+    float: left;
+}
+.course .cimgg{
+    margin-left: 4.25%;
+}
+.chome{
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+}
+.cimg img{
+    width: 100%;
+    transition: 0.5s ease-in-out;
+}
+.cimg .certificate{
+    background: red;
+    font-size: 14px;
+    padding: 7px 23px;
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    right: 0;
+    bottom: 25px;
+}
+.cimg .certificate:hover{
+    background: black;
+}
+.cimg:hover img{
+    transform: scale(1.05);
+}
+.cimg h3{
+    padding-top: 20px;
+    font-size: 20px;
+    padding-bottom: 4px;
+}
+.cimg hr{
+    margin-top: 20px;
+    padding: 1.5px;
+    background: red;
+    border: none;
+    width: 40px;
+    margin-bottom: 20px;
+    transition: 0.4s;
+}
+.cimg:hover hr{
+    width: 50px;
+}
+.cimg .cp2{
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 26px;
+    opacity: 0.7;
+}
+.cfooter{
+    padding-top: 25px;
+}
+.cfooter a{
+    text-decoration: none;
+    font-size: 13px;
+    color: #252525;
+}
+.cfooter span{
+    color: red;
+    font-size: 20px;
+    float: right;
+}
+.cfooter .icon{
+    margin-left: 11px;
+}
+/* --Course-END-- */
+
+
+/* --Expert-Start-- */
+.expert{
+    padding: 40px 0px;
+    overflow: hidden;
+}
+.expert .box1{
+   width: 50%;
+   float: left;
+}
+.ex1{
+    background: #FF1949;
+    height: 428px;
+    padding: 130px;
+}
+.ex1 a{
+    font-size: 17px;
+    color: white;
+    text-decoration: none;
+}
+.ex1 hr{
+    width: 91px;
+    padding: 0.5px;
+    background: white;
+    border: none;
+}
+.ex1 h4{
+    font-size: 45px;
+    color: white;
+}
+.ex2{
+    background: url(../img/expert2.jpg);
+    background-size: cover;
+    height: 428px;
+}
+.expert .box2{
+    width: 50%;
+    float: left;
+}
+.ex3{
+    background: url(../img/expert1.jpg);
+    background-size: cover;
+    height: 428px;
+}
+.ex4{
+    background: url(../img/expert3.jpg);
+    background-size: cover;
+    height: 428px;
+    padding: 116px;
+}
+
+.ex4 h4{
+    font-size: 45px;
+}
+.ex4 a{
+    font-size: 17px;
+    color: black;
+    text-decoration: none;
+}
+.ex4 hr{
+    padding: 0.5px;
+    background: black;
+    border: none;
+    width: 91px;
+}
+/* --Expert-END-- */
+
+
+/* --Teacher-Start-- */
+.teacher{
+    padding: 40px 0;
+}
+.teacher h4{
+    font-size: 45px;
+}
+.teacher hr{
+    padding: 1.5px;
+    border: none;
+    background-color: red;
+    width: 40px;
+    margin-top: 15px;
+}
+.teacher p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    font-weight: 300;
+    color: #333333;
+    width: 650px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.box1{
+    width: 33.33%;
+    float: left;  
+}
+.teacher{
+    display: flex;
+    padding: 15px 0px;
+}
+.t1l img{
+    width: 142px;
+    height: auto;
+}
+.t1r{
+    padding: 20px;
+    margin-left: 15px;
+}
+.t1r h3{
+    padding-bottom: 6px;
+}
+.t1r span{
+    font-size: 15px;
+}
+.t1r i{
+    margin-top: 12px;
+}
+.t1r i:hover{
+    color: red;
+}
+.t1r ul li{
+    display: inline-block;
+}
+.t1r ul li a i{
+    color: black;
+    margin-right: 5px;
+    font-size: 15px;
+}
+/* --Teacher-END-- */
+
+
+/* --Test-Start-- */
+.test{
+    background: url(../img/background.jpg);
+    background-size: cover;
+    padding: 80px 0;
+    overflow: hidden;
+    margin: 50px 0;
+}
+.test p{
+    font-size: 19px;
+}
+.test i{
+    font-size: 30px;
+    margin-right: 15px;
+}
+.testt{
+    display: flex;
+    padding: 40px 0;
+}
+.content{
+    margin-left: 50px;
+    font-size: 45px;
+    color: white;
+}
+/* --Test-END-- */
+
+/* Take-Start */
+.take{
+    padding: 50px 0;
+}
+.takeL{
+    width: 50%;
+    float: left;
+}
+.take h1{
+    font-size: 45px;
+}
+.take hr{
+    width: 40px;
+    border: 1px solid red;
+    margin-top: 10px;
+}
+.take p{
+    font-size: 19px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    color: #333333;
+}
+.take ul li{
+    list-style: none;
+    font-size: 15px;
+    padding-top: 10px;
+    color: #444444;
+}
+.take ul li i{
+    color: red;
+    margin-right: 9px;
+}
+.takeR{
+    width: 50%;
+    float: left;
+}
+/* --Take-END-- */
+
+
+/* --Slider-Start-- */
+.slider{
+    background: url(../img/expert3.jpg);
+    background-size: cover;
+}
+.im1 img{
+    width: 220px;
+    padding: 60px 0;
+}
+.sliderr{
+    display: flex;
+}
+/* --Slider-END-- */
+
+
+/* --Skill-Start-- */
+.skill{
+    background: url(../img/background-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 100px;
+    overflow: hidden;
+    position: relative;
+}
+.skil{
+    width: 80%;
+    margin: 0 auto;
+    background: lightslategrey;
+}
+.skil-L{
+    width: 50%;
+    float: left;
+    padding: 50px 0;
+    background: #FF1949;
+}
+.skil-L h1{
+    width: 70%;
+    margin: 0 auto;
+    padding: 50px 0;
+    color: white;
+    font-size: 40px;
+}
+.skil-R{
+    width: 50%;
+    float: left;
+    background: white;
+}
+.skill-apply{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.skil-R h1{
+    width: 50%;
+    font-size: 27px;
+}
+.skil-R img{
+    width: 50%;
+    float: left;
+}
+.skiil{
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.for{
+    height: 26px;
+    width: 350px;
+    padding: 2px 10px;
+    margin-top: 25.5px;
+    border: 0;
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+.submit{
+    padding: 17px 30px;
+    background: black;
+    color: white;
+    border: none;
+    margin-top: 45px;
+}
+.arrow{
+  position: absolute;
+  top: 299px;
+  left: 660px;
+  font-size: 50px;
+  color: white;
+}
+/* --Skill-END-- */
+
+
+/* --About-Start-- */
+.about{
+    padding: 50px 0;
+    background: #252525;
+    color: white;
+}
+.about-one{
+    width: 25%;
+    float: left;
+}
+.about-one ul li{
+    list-style-type: none;
+    margin-top: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300px;
+    font-size: 14px;
+}
+.about-one ul li:hover{
+    color: red;
+}
+.about-one a:hover{
+    color: red;
+}
+.about-one p{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    padding-bottom: 15px;
+}
+.about-one .map{
+    color: white;
+}
+.about-one a{
+    color: rgb(206, 206, 206);
+    text-decoration: none;
+}
+.about-two{
+    width: 25%;
+    float: left;
+}
+.about-two ul li{
+    list-style-type: none;
+    margin-top: 6px;
+}
+.about-two ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+.about-two ul li a:hover{
+    color: red;
+}
+/* --About-END-- */
+
+
+/* --Footer-Start-- */
+footer{
+    padding: 20px 0;
+    background: #252525;
+    color: rgb(224, 224, 224);
+}
+.footerL{
+    width: 50%;
+    float: left;
+    padding: 15px 0;
+}
+.footerR{
+    width: 50%;
+    float: right;
+}
+.footerR ul{
+    margin-left: 180px;
+}
+.footerR ul li{
+    display: inline-block;
+    margin-left: 10px;
+    padding: 15px 0;
+    color: rgb(189, 189, 189);
+}
+.footerR ul li i:hover{
+    color: red;
+}
